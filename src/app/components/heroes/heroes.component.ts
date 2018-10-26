@@ -12,12 +12,12 @@ export class HeroesComponent implements OnInit {
 
   constructor(private _heroesService:HeroesService,
               private router:Router) {
-    console.log("Constructor");
+    // console.log("Constructor");
   }
 
   ngOnInit() {
     this.heroes = this._heroesService.getHeroes();
-    console.log(this.heroes);
+    //  console.log(this.heroes);
   }
 
 //programacion implementada para uso de link se debe importar Router y definirlo en el constructor
